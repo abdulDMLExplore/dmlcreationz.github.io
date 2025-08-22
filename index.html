@@ -3,75 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdul's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Abdulsamad Yusuf | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      text-align: center;
+      background: #023e8a;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #0077b6;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact p {
+      margin: 10px 0;
+    }
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Abdul's Portfolio</h1>
-    <p>Aspiring AI Entrepreneur | Software Developer</p>
+    <h1>Abdulsamad Yusuf</h1>
+    <p>Computer Scientist | Web Developer | Researcher</p>
   </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I’m passionate about building AI-driven solutions that solve real-world problems. 
-      From web security to accessibility tools, I focus on using technology to create impact.
+      Hi, I'm <strong>Abdulsamad Yusuf</strong>, a passionate computer scientist and problem solver. 
+      I specialize in building innovative solutions ranging from <strong>web applications</strong> to 
+      <strong>AI-driven systems</strong>, with strong experience in <em>cybersecurity, information retrieval, and machine learning</em>. 
+      My mission is to leverage technology to create meaningful impact while constantly learning and growing.
     </p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Flask Web Security System</h3>
-      <p>Detects SQL injection & XSS attacks to keep apps safe.</p>
-      <a href="https://github.com/abdulDML/flask-web-security" target="_blank">View on GitHub</a>
+    <div class="projects">
+      <div class="project">
+        <h3>🔒 Web Security System</h3>
+        <p>Built a Flask-based system to detect and prevent <strong>SQL Injection</strong> and <strong>XSS attacks</strong>.</p>
+      </div>
+      <div class="project">
+        <h3>📧 Voice-Based Email System</h3>
+        <p>Developed an assistive system enabling visually challenged individuals to send and receive emails.</p>
+      </div>
+      <div class="project">
+        <h3>⚽ Football Prediction Website</h3>
+        <p>Designed a predictive platform leveraging data analytics to forecast football match outcomes.</p>
+      </div>
+      <div class="project">
+        <h3>🛒 E-Commerce Recommendation System</h3>
+        <p>Implemented a content-based filtering system to improve product recommendations for online shoppers.</p>
+      </div>
     </div>
-
-    <div class="project">
-      <h3>Voice-Based Email System</h3>
-      <p>Helps visually impaired users send and receive emails using only voice.</p>
-      <a href="https://github.com/abdulDML/voice-email" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>E-commerce Recommendation Engine</h3>
-      <p>Recommends products to users based on browsing history.</p>
-      <a href="https://github.com/abdulDML/ecommerce-recommendation" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Football Prediction Website</h3>
-      <p>Predicts match outcomes using machine learning.</p>
-      <a href="https://github.com/abdulDML/football-prediction" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>DML Explore (Shopify Store)</h3>
-      <p>My live e-commerce store showcasing entrepreneurship.</p>
-      <a href="https://dmlexplore.myshopify.com" target="_blank">Visit Store</a>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, Flask, Django</li>
-      <li>JavaScript, React</li>
-      <li>SQL, MongoDB</li>
-      <li>AI/ML (Pandas, NumPy, Scikit-learn)</li>
-      <li>APIs & Cloud Integrations</li>
-    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/abdulDML" target="_blank">github.com/abdulDML</a></p>
+    <div class="contact">
+      <p>📧 Email: <a href="mailto:dmlexplorecreationz@gmail.com">dmlexplorecreationz@gmail.com</a></p>
+      <p>📞 Phone: +234 812 744 4405</p>
+      <p>💻 GitHub: <a href="https://github.com/abdulDML" target="_blank">github.com/abdulDML</a></p>
+      <p>🔗 LinkedIn: <a href="#">Add your LinkedIn link here</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Abdul. All rights reserved.</p>
+    <p>© 2025 Abdulsamad Yusuf | All Rights Reserved</p>
   </footer>
 </body>
 </html>
+
